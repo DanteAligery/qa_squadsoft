@@ -5,8 +5,11 @@
     <classes>
       <class name="squad.profile.elements">
         <methods>
-          <include name="profile_contacts"/>
+          <include name="profile_card_H"/>
+          <include name="profile_contacts_cellphone_W"/>
+          <include name="profile_contacts_cellphone_H"/>
           <include name="setup"/>
+          <include name="profile_card_W"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- squad.profile.elements -->

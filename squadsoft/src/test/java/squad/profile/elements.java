@@ -25,34 +25,44 @@ public class elements {
 		Cdriver = new ChromeDriver();
 		Cdriver.manage().window().maximize();
 		Cdriver.get ("http://lesnikov:qoO5QOE9@test-squadspace.squadsoft.ru/default.aspx/profile/5");
+		
 	}
 
-	@Test
-	public void profile() {
+	@Test (groups = "Верстка. Профиль")
+	public void profile_card_W() {
 		//карточка профиля
-		
-		//WebElement profile_card = Cdriver.findElement(By.className("profile"));
-		//ExpectedConditions.presenceOfElementLocated(By.className("profile"));
+		WebElement profile_card = Cdriver.findElement(By.xpath("/html/body/form/div[5]/app-squadspace/div/app-profile-view/div[2]/app-profile-feed-view/app-user-card/div"));
+		ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/form/div[5]/app-squadspace/div/app-profile-view/div[2]/app-profile-feed-view/app-user-card/div"));
 		//определяем размеры
-		//System.out.println("****************************************************************************");
-		/*
-		if (profile_card.getCssValue("width").equalsIgnoreCase("645px"))
+		if (profile_card.getCssValue("width").equalsIgnoreCase("644px"))
 		{	
-			System.out.println("Ширина фото профиля:		" + profile_card.getCssValue("width"));	
+			System.out.println("Ширина карточки профиля:		" + profile_card.getCssValue("width"));	
 		}
 		else
 		{
-			throw new RuntimeException ("Ширина фото профиля не соответствует 645px");
+			throw new SkipException ("Ширина карточки профиля " + profile_card.getCssValue("width") + " не соответствует 644px");
 		}
-		*/
+			
 	}
-	
-	@Test
-	public void profile_photo() {
-		//фото профиля
+	@Test(groups = "Верстка. Профиль")
+	public void profile_card_H() {
+		//карточка профиля
+		WebElement profile_card = Cdriver.findElement(By.xpath("/html/body/form/div[5]/app-squadspace/div/app-profile-view/div[2]/app-profile-feed-view/app-user-card/div"));
+		ExpectedConditions.presenceOfElementLocated(By.xpath("/html/body/form/div[5]/app-squadspace/div/app-profile-view/div[2]/app-profile-feed-view/app-user-card/div"));
+		//определяем размеры
+		if (profile_card.getCssValue("height").equalsIgnoreCase("332px"))
+		{	
+			System.out.println("Высота карточки профиля:		" + profile_card.getCssValue("height"));	
+		}
+		else
+		{
+			throw new SkipException ("Высота карточки профиля " + profile_card.getCssValue("height") + " не соответствует 332px");
+		}
+	}
+	@Test (groups = "Верстка. Профиль") //фото профиля. Ширина
+	public void profile_photo_W() {
 		WebElement profile_photo = Cdriver.findElement(By.className("profile-photo"));
 		ExpectedConditions.presenceOfElementLocated(By.className("profile-photo"));
-		//определяем размеры и дорисовку до окружности
 		System.out.println("****************************************************************************");
 		if (profile_photo.getCssValue("width").equalsIgnoreCase("164px"))
 		{	
@@ -60,25 +70,41 @@ public class elements {
 		}
 		else
 		{
-			throw new RuntimeException ("Ширина фото профиля не соответствует 164px");
+			throw new RuntimeException ("Ширина фото профиля " + profile_photo.getCssValue("width") + " не соответствует 164px");
 		}
+	}	
+			
+	@Test(groups = "Верстка. Профиль") //фото профиля. Высота
+	public void profile_photo_H() {
+		WebElement profile_photo = Cdriver.findElement(By.className("profile-photo"));
+		ExpectedConditions.presenceOfElementLocated(By.className("profile-photo"));
+		System.out.println("****************************************************************************");
 		if (profile_photo.getCssValue("height").equalsIgnoreCase("164px"))
 		{	
 			System.out.println("Высота фото профиля:		" + profile_photo.getCssValue("height"));	
 		}
 		else
 		{
-			throw new RuntimeException ("Высота фото профиля не соответствует 164px");
-		}
-		if (profile_photo.getCssValue("border-radius").equalsIgnoreCase("50%"))
-		{	
-			System.out.println("Радиус скругления фото профиля:	" + profile_photo.getCssValue("border-radius"));	
-		}
-		else
-		{
-			throw new RuntimeException ("Радиус скругления фото профиля не соответствует 50%");
+			throw new RuntimeException ("Высота фото профиля " + profile_photo.getCssValue("height") + " не соответствует 164px");
 		}
 		
+	}
+	@Test (groups = "Верстка. Профиль") //фото профиля. радиус скругления
+		public void profile_photo_BR() {
+			WebElement profile_photo = Cdriver.findElement(By.className("profile-photo"));
+			ExpectedConditions.presenceOfElementLocated(By.className("profile-photo"));
+			System.out.println("****************************************************************************");
+			
+			if (profile_photo.getCssValue("border-radius").equalsIgnoreCase("50%"))
+			{	
+				System.out.println("Радиус скругления фото профиля:	" + profile_photo.getCssValue("border-radius"));	
+			}
+			else
+			{
+				throw new RuntimeException ("Радиус скругления фото профиля" + profile_photo.getCssValue("border-radius") + "не соответствует 50%");
+			}
+	}
+	/*
 		WebElement photo_edit = Cdriver.findElement(By.className("profile-photo__edit"));
 		Actions ActivatePhoto = new Actions(Cdriver);
 		ActivatePhoto.moveToElement(photo_edit).build().perform();
@@ -95,9 +121,9 @@ public class elements {
 		System.out.println( "border-bottom-color:		" + h.getCssValue("border-bottom-color"));
 		System.out.println( "border-left-color:		" + h.getCssValue("border-left-color"));
   }
-	
-	@Test
-	public void profile_contacts() {
+	*/
+	@Test(groups = "Верстка. Профиль")
+	public void profile_contacts_cellphone_W() {
 		WebElement cellphone = Cdriver.findElement(By.className("profile__info"));
 		if (cellphone.getCssValue("width").equalsIgnoreCase("281px"))
 		{	
@@ -105,19 +131,21 @@ public class elements {
 		}
 		else
 		{
-			//throw new RuntimeException ("Ширина поля мобильного телефона не соответствует значению 281px");
-			throw new SkipException ("Ширина поля мобильного телефона не соответствует значению 281px");
+			throw new SkipException ("Ширина поля мобильного телефона " + cellphone.getCssValue("width") + " не соответствует значению 281px");
 		}
+	}
+	
+	@Test(groups = "Верстка. Профиль")
+	public void profile_contacts_cellphone_H() {
+		WebElement cellphone = Cdriver.findElement(By.className("profile__info"));
 		if (cellphone.getCssValue("height").equalsIgnoreCase("16px"))
 		{	
 			System.out.println("Высота поля мобильного телефона:		"		+ cellphone.getCssValue("height"));	
 		}
 		else
 		{
-			//throw new RuntimeException ("Ширина поля мобильного телефона не соответствует значению 281px");
-			throw new SkipException ("Высота поля мобильного телефона не соответствует значению 16px");
-		}
-		
+			throw new SkipException ("Высота поля мобильного телефона " + cellphone.getCssValue("height") + " не соответствует значению 16px");
+		}	
 	}
 	
 	@AfterClass
