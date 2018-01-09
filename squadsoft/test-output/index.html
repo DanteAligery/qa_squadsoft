@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-skipped">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,36 +91,36 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods,  4 skipped,  3 passed</span>
+                    <span class="method-stats">10 methods, 4 failed,   6 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods skipped suite-Default_suite"> (hide)</a> <!-- hide-methods skipped suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods skipped suite-Default_suite"> (show)</a> <!-- show-methods skipped suite-Default_suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
                     </span>
-                    <div class="method-list-content skipped suite-Default_suite">
+                    <div class="method-list-content failed suite-Default_suite">
                       <span>
-                        <img width="3%" src="skipped.png"/>
+                        <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="squad.profile.elements" hash-for-method="profile_card_H">profile_card_H</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
+                        <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="squad.profile.elements" hash-for-method="profile_card_W">profile_card_W</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
+                        <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="squad.profile.elements" hash-for-method="profile_contacts_cellphone_H">profile_contacts_cellphone_H</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="skipped.png"/>
+                        <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="squad.profile.elements" hash-for-method="profile_contacts_cellphone_W">profile_contacts_cellphone_W</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-Default_suite -->
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -129,6 +129,21 @@
                       <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
                     <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="squad.profile.elements" hash-for-method="name_fontfamily">name_fontfamily</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="squad.profile.elements" hash-for-method="name_fontsize">name_fontsize</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="squad.profile.elements" hash-for-method="name_fontweight">name_fontweight</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="squad.profile.elements" hash-for-method="profile_photo_BR">profile_photo_BR</a> <!-- method navigator-link -->
@@ -156,9 +171,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-skipped">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="failed.png"/>
               <span class="class-name">squad.profile.elements</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -167,7 +182,7 @@
                   <a name="profile_card_H">
                   </a> <!-- profile_card_H -->
                   <span class="method-name">profile_card_H</span>
-                  <div class="stack-trace">org.testng.SkipException: Высота карточки профиля 289px не соответствует 332px
+                  <div class="stack-trace">java.lang.RuntimeException: Высота карточки профиля 289px не соответствует 332px
 	at squad.profile.elements.profile_card_H(elements.java:59)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -203,7 +218,7 @@
                   <a name="profile_card_W">
                   </a> <!-- profile_card_W -->
                   <span class="method-name">profile_card_W</span>
-                  <div class="stack-trace">org.testng.SkipException: Ширина карточки профиля 648px не соответствует 644px
+                  <div class="stack-trace">java.lang.RuntimeException: Ширина карточки профиля 648px не соответствует 644px
 	at squad.profile.elements.profile_card_W(elements.java:43)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -239,8 +254,8 @@
                   <a name="profile_contacts_cellphone_H">
                   </a> <!-- profile_contacts_cellphone_H -->
                   <span class="method-name">profile_contacts_cellphone_H</span>
-                  <div class="stack-trace">org.testng.SkipException: Высота поля мобильного телефона 20px не соответствует значению 16px
-	at squad.profile.elements.profile_contacts_cellphone_H(elements.java:147)
+                  <div class="stack-trace">java.lang.RuntimeException: Высота поля мобильного телефона 20px не соответствует значению 16px
+	at squad.profile.elements.profile_contacts_cellphone_H(elements.java:192)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -275,8 +290,8 @@
                   <a name="profile_contacts_cellphone_W">
                   </a> <!-- profile_contacts_cellphone_W -->
                   <span class="method-name">profile_contacts_cellphone_W</span>
-                  <div class="stack-trace">org.testng.SkipException: Ширина поля мобильного телефона 434px не соответствует значению 281px
-	at squad.profile.elements.profile_contacts_cellphone_W(elements.java:134)
+                  <div class="stack-trace">java.lang.RuntimeException: Ширина поля мобильного телефона 434px не соответствует значению 281px
+	at squad.profile.elements.profile_contacts_cellphone_W(elements.java:179)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -307,13 +322,34 @@
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-skipped -->
+          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">squad.profile.elements</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="name_fontfamily">
+                  </a> <!-- name_fontfamily -->
+                  <span class="method-name">name_fontfamily</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="name_fontsize">
+                  </a> <!-- name_fontsize -->
+                  <span class="method-name">name_fontsize</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="name_fontweight">
+                  </a> <!-- name_fontweight -->
+                  <span class="method-name">name_fontweight</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="profile_photo_BR">
@@ -340,7 +376,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/tmp/testng-eclipse-1739482764/testng-customsuite.xml</span>
+            <span class="header-content">/tmp/testng-eclipse-643932435/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -376,6 +412,18 @@
             <div class="test-group">
               <span class="test-group-name">Верстка. Профиль</span>
               <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">name_fontfamily</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">name_fontsize</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">name_fontweight</span>
+                <br/>
+              </div> <!-- method-in-group -->
               <div class="method-in-group">
                 <span class="method-in-group-name">profile_card_H</span>
                 <br/>
@@ -421,40 +469,52 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(7);
+data.addRows(10);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'profile_card_H')
 data.setCell(0, 2, 'squad.profile.elements')
-data.setCell(0, 3, 59);
+data.setCell(0, 3, 216);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'profile_contacts_cellphone_H')
+data.setCell(1, 1, 'name_fontfamily')
 data.setCell(1, 2, 'squad.profile.elements')
-data.setCell(1, 3, 49);
+data.setCell(1, 3, 122);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'profile_card_W')
+data.setCell(2, 1, 'profile_contacts_cellphone_H')
 data.setCell(2, 2, 'squad.profile.elements')
-data.setCell(2, 3, 48);
+data.setCell(2, 3, 91);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'profile_photo_BR')
+data.setCell(3, 1, 'name_fontsize')
 data.setCell(3, 2, 'squad.profile.elements')
-data.setCell(3, 3, 46);
+data.setCell(3, 3, 79);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'profile_photo_H')
+data.setCell(4, 1, 'profile_photo_BR')
 data.setCell(4, 2, 'squad.profile.elements')
-data.setCell(4, 3, 44);
+data.setCell(4, 3, 67);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'profile_photo_W')
+data.setCell(5, 1, 'name_fontweight')
 data.setCell(5, 2, 'squad.profile.elements')
-data.setCell(5, 3, 43);
+data.setCell(5, 3, 58);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'profile_contacts_cellphone_W')
+data.setCell(6, 1, 'profile_photo_W')
 data.setCell(6, 2, 'squad.profile.elements')
-data.setCell(6, 3, 36);
+data.setCell(6, 3, 54);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'profile_card_W')
+data.setCell(7, 2, 'squad.profile.elements')
+data.setCell(7, 3, 52);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'profile_contacts_cellphone_W')
+data.setCell(8, 2, 'squad.profile.elements')
+data.setCell(8, 3, 50);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'profile_photo_H')
+data.setCell(9, 2, 'squad.profile.elements')
+data.setCell(9, 3, 48);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 325 ms</span>
+              <span class="suite-total-time">Total running time: 837 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -486,36 +546,56 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <span class="method-name">name_fontfamily</span>
+                <span class="method-start">10464 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">name_fontsize</span>
+                <span class="method-start">10592 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">name_fontweight</span>
+                <span class="method-start">10672 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">profile_card_H</span>
-                <span class="method-start">8598 ms</span>
+                <span class="method-start">10732 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">profile_card_W</span>
-                <span class="method-start">8659 ms</span>
+                <span class="method-start">10959 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">profile_contacts_cellphone_H</span>
-                <span class="method-start">8709 ms</span>
+                <span class="method-start">11014 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">profile_contacts_cellphone_W</span>
-                <span class="method-start">8760 ms</span>
+                <span class="method-start">11107 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">profile_photo_BR</span>
-                <span class="method-start">8799 ms</span>
+                <span class="method-start">11161 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">profile_photo_H</span>
-                <span class="method-start">8847 ms</span>
+                <span class="method-start">11231 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">profile_photo_W</span>
-                <span class="method-start">8892 ms</span>
+                <span class="method-start">11281 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">8936 ms</span>
+                <span class="method-start">11337 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

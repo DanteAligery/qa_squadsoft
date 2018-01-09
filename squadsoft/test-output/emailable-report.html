@@ -9,11 +9,11 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">3</td><td class="num attn">4</td><td class="num">0</td><td class="num">9 039</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">6</td><td class="num">0</td><td class="num attn">4</td><td class="num">11 465</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="4">squad.profile.elements</td><td><a href="#m0">profile_card_H</a></td><td rowspan="1">1515503690320</td><td rowspan="1">59</td></tr><tr class="skippedeven"><td><a href="#m1">profile_card_W</a></td><td rowspan="1">1515503690381</td><td rowspan="1">48</td></tr><tr class="skippedeven"><td><a href="#m2">profile_contacts_cellphone_H</a></td><td rowspan="1">1515503690431</td><td rowspan="1">49</td></tr><tr class="skippedeven"><td><a href="#m3">profile_contacts_cellphone_W</a></td><td rowspan="1">1515503690482</td><td rowspan="1">36</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">squad.profile.elements</td><td><a href="#m4">profile_photo_BR</a></td><td rowspan="1">1515503690521</td><td rowspan="1">46</td></tr><tr class="passedeven"><td><a href="#m5">profile_photo_H</a></td><td rowspan="1">1515503690569</td><td rowspan="1">44</td></tr><tr class="passedeven"><td><a href="#m6">profile_photo_W</a></td><td rowspan="1">1515503690614</td><td rowspan="1">43</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="4">squad.profile.elements</td><td><a href="#m0">profile_card_H</a></td><td rowspan="1">1515506071207</td><td rowspan="1">216</td></tr><tr class="failedeven"><td><a href="#m1">profile_card_W</a></td><td rowspan="1">1515506071434</td><td rowspan="1">52</td></tr><tr class="failedeven"><td><a href="#m2">profile_contacts_cellphone_H</a></td><td rowspan="1">1515506071489</td><td rowspan="1">91</td></tr><tr class="failedeven"><td><a href="#m3">profile_contacts_cellphone_W</a></td><td rowspan="1">1515506071582</td><td rowspan="1">50</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">squad.profile.elements</td><td><a href="#m4">name_fontfamily</a></td><td rowspan="1">1515506070939</td><td rowspan="1">122</td></tr><tr class="passedeven"><td><a href="#m5">name_fontsize</a></td><td rowspan="1">1515506071067</td><td rowspan="1">79</td></tr><tr class="passedeven"><td><a href="#m6">name_fontweight</a></td><td rowspan="1">1515506071147</td><td rowspan="1">58</td></tr><tr class="passedeven"><td><a href="#m7">profile_photo_BR</a></td><td rowspan="1">1515506071636</td><td rowspan="1">67</td></tr><tr class="passedeven"><td><a href="#m8">profile_photo_H</a></td><td rowspan="1">1515506071706</td><td rowspan="1">48</td></tr><tr class="passedeven"><td><a href="#m9">profile_photo_W</a></td><td rowspan="1">1515506071756</td><td rowspan="1">54</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">squad.profile.elements#profile_card_H</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: Высота карточки профиля 289px не соответствует 332px
+<h2>Default test</h2><h3 id="m0">squad.profile.elements#profile_card_H</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: Высота карточки профиля 289px не соответствует 332px
 	at squad.profile.elements.profile_card_H(elements.java:59)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -41,7 +41,7 @@
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">squad.profile.elements#profile_card_W</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: Ширина карточки профиля 648px не соответствует 644px
+<h3 id="m1">squad.profile.elements#profile_card_W</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: Ширина карточки профиля 648px не соответствует 644px
 	at squad.profile.elements.profile_card_W(elements.java:43)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -69,8 +69,8 @@
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">squad.profile.elements#profile_contacts_cellphone_H</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: Высота поля мобильного телефона 20px не соответствует значению 16px
-	at squad.profile.elements.profile_contacts_cellphone_H(elements.java:147)
+<h3 id="m2">squad.profile.elements#profile_contacts_cellphone_H</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: Высота поля мобильного телефона 20px не соответствует значению 16px
+	at squad.profile.elements.profile_contacts_cellphone_H(elements.java:192)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -97,8 +97,8 @@
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">squad.profile.elements#profile_contacts_cellphone_W</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: Ширина поля мобильного телефона 434px не соответствует значению 281px
-	at squad.profile.elements.profile_contacts_cellphone_W(elements.java:134)
+<h3 id="m3">squad.profile.elements#profile_contacts_cellphone_W</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: Ширина поля мобильного телефона 434px не соответствует значению 281px
+	at squad.profile.elements.profile_contacts_cellphone_W(elements.java:179)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -125,8 +125,11 @@
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">squad.profile.elements#profile_photo_BR</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">squad.profile.elements#profile_photo_H</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">squad.profile.elements#profile_photo_W</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">squad.profile.elements#name_fontfamily</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">squad.profile.elements#name_fontsize</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">squad.profile.elements#name_fontweight</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">squad.profile.elements#profile_photo_BR</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">squad.profile.elements#profile_photo_H</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">squad.profile.elements#profile_photo_W</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -40,7 +40,7 @@ public class elements {
 		}
 		else
 		{
-			throw new SkipException ("Ширина карточки профиля " + profile_card.getCssValue("width") + " не соответствует 644px");
+			throw new RuntimeException ("Ширина карточки профиля " + profile_card.getCssValue("width") + " не соответствует 644px");
 		}
 			
 	}
@@ -56,7 +56,7 @@ public class elements {
 		}
 		else
 		{
-			throw new SkipException ("Высота карточки профиля " + profile_card.getCssValue("height") + " не соответствует 332px");
+			throw new RuntimeException ("Высота карточки профиля " + profile_card.getCssValue("height") + " не соответствует 332px");
 		}
 	}
 	@Test (groups = "Верстка. Профиль") //фото профиля. Ширина
@@ -123,6 +123,51 @@ public class elements {
   }
 	*/
 	@Test(groups = "Верстка. Профиль")
+	public void name_fontfamily() {
+		WebElement profile__name = Cdriver.findElement(By.className("profile__name"));
+		ExpectedConditions.presenceOfElementLocated(By.className("profile__name"));
+		//String fontfamily = profile__name.getCssValue("font-family");
+		if (profile__name.getCssValue("font-family").equalsIgnoreCase("\"Open Sans\", sans-serif"))
+		{	
+			System.out.println("	- Имя профиля. Семейство шрифта"		+ profile__name.getCssValue("font-family"));	
+		}
+		else
+		{
+			throw new RuntimeException ("Семейство шрифта в имени профиля" + profile__name.getCssValue("font-family") + "не соответствует Open Sans, sans-serif");
+		}
+	}
+	
+	@Test(groups = "Верстка. Профиль")
+	public void name_fontsize(){
+		WebElement profile__name = Cdriver.findElement(By.className("profile__name"));
+		//System.out.println("	- Размер шрифта "		+ profile__name.getCssValue("font-size"));
+		if (profile__name.getCssValue("font-size").equalsIgnoreCase("25px"))
+		{	
+			System.out.println("	- Имя профиля. Размер шрифта "		+ profile__name.getCssValue("font-size"));	
+		}
+		else
+		{
+			//throw new SkipException("");
+			throw new RuntimeException ("Размер шрифтав имени профиля не соответствует значению 25px");
+		}
+	}
+	
+	@Test(groups = "Верстка. Профиль")
+	public void name_fontweight(){
+		WebElement profile__name = Cdriver.findElement(By.className("profile__name"));
+		//System.out.println("	- Размер шрифта "		+ profile__name.getCssValue("font-weight")); 
+		if (profile__name.getCssValue("font-weight").equalsIgnoreCase("600"))
+		{	
+			System.out.println("	- Имя профиля. Толщина шрифта "		+ profile__name.getCssValue("font-weight"));	
+		}
+		else
+		{
+			//throw new SkipException("");
+			throw new RuntimeException ("Толщина шрифта в имени профиля не соответствует значению 600");
+		}
+	}
+	
+	@Test(groups = "Верстка. Профиль")
 	public void profile_contacts_cellphone_W() {
 		WebElement cellphone = Cdriver.findElement(By.className("profile__info"));
 		if (cellphone.getCssValue("width").equalsIgnoreCase("281px"))
@@ -131,7 +176,7 @@ public class elements {
 		}
 		else
 		{
-			throw new SkipException ("Ширина поля мобильного телефона " + cellphone.getCssValue("width") + " не соответствует значению 281px");
+			throw new RuntimeException ("Ширина поля мобильного телефона " + cellphone.getCssValue("width") + " не соответствует значению 281px");
 		}
 	}
 	
@@ -144,7 +189,7 @@ public class elements {
 		}
 		else
 		{
-			throw new SkipException ("Высота поля мобильного телефона " + cellphone.getCssValue("height") + " не соответствует значению 16px");
+			throw new RuntimeException ("Высота поля мобильного телефона " + cellphone.getCssValue("height") + " не соответствует значению 16px");
 		}	
 	}
 	
