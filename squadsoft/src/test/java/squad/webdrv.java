@@ -9,31 +9,17 @@ import java.lang.String;
 
 public class webdrv {
 	static String ChromeProfilePath = "/home/dante/.config/google-chrome/SQUAD/";
-	static String driverPath = "/home/dante/QA/";
-	static ChromeDriver driver;
 	
+	static ChromeDriver driver;
+	static String driverPath = "/home/dante/QA/drivers/";
+	public WebDriver Cdriver;
 	
 	public void Chromedrv(){
-	System.setProperty("webdriver.chrome.driver", driverPath+"chromedriver_2.34");
-	ChromeOptions ChromeProfile = new ChromeOptions();
-	ChromeProfile.addArguments("chrome.switches", "--disable-extensions");
-	//ChromeProfile.addArguments("user-Data-Dir="+ChromeProfilePath);
-	ChromeProfile.addArguments("disable-popup-blocking");
-	//WebDriver Cdrv = new ChromeDriver(ChromeProfile);
-	
-	//DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-	
-	
-	//WebDriver driver =new ChromeDriver(ChromeProfile);	
-	//driver.manage().window().maximize();*/
-	}
-	/*
-	static void ChromeProfile() {
-		ChromeOptions ChromeProfile = new ChromeOptions();
-		ChromeProfile.addArguments("chrome.switches", "--disable-extensions");
-		ChromeProfile.addArguments("user-Data-Dir=" + ChromeProfilePath);
-		ChromeProfile.addArguments("disable-popup-blocking");
-		}
-		*/
-		
+		System.setProperty("webdriver.chrome.driver", driverPath+"chromedriver_2.34");
+		System.out.println("*******************");
+		System.out.println("Запуск Chrome");
+		Cdriver = new ChromeDriver();
+		Cdriver.manage().window().maximize();
+		Cdriver.get ("http://lesnikov:qoO5QOE9@test-squadspace.squadsoft.ru/default.aspx/profile/5");
+	}	
 }
