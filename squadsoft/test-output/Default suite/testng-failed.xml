@@ -5,8 +5,16 @@
     <classes>
       <class name="squad.profile.elements">
         <methods>
-          <include name="profile_contacts"/>
+          <include name="profile_card_H"/>
+          <include name="sidebar_groups_title_H"/>
+          <include name="profile_contacts_cellphone_W"/>
+          <include name="profile_contacts_cellphone_H"/>
+          <include name="sidebar_groups_H"/>
+          <include name="sidebar_UserFiles_H"/>
           <include name="setup"/>
+          <include name="sidebar_UserFiles_title_H"/>
+          <include name="sidebar_collegues_H"/>
+          <include name="sidebar_collegues_title_H"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- squad.profile.elements -->
