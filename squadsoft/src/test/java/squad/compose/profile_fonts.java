@@ -1,4 +1,4 @@
-package squad.profile;
+package squad.compose;
 
 import org.testng.annotations.Test;
 import org.openqa.selenium.By;

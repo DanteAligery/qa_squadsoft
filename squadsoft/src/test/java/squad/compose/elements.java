@@ -1,4 +1,4 @@
-package squad.profile;
+package squad.compose;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -541,8 +541,9 @@ public class elements {
 		}
 	}
 	
+	
 	/////////////////////////////////////////////////////////////////////////
-	@Test(groups = "Верстка. Профиль")
+	@Test(groups = "Верстка. Sidebar")
 	public void sidebar_groups_W() {
 		//карточка профиля
 		WebElement groups = Cdriver.findElement(By.xpath("/html/body/form/div[5]/app-squadspace/div/app-profile-view/div[1]/groups/div"));
@@ -1151,7 +1152,7 @@ public class elements {
 		}
 	}
 	
-	@Test(groups = "Верстка. Профиль")
+		
 	public void sidebar_filesplusBTN_shadow() {
 		WebElement files_plusBTN = Cdriver.findElement(By.xpath("/html/body/form/div[5]/app-squadspace/div/app-profile-view/div[1]/user-files/div/div[1]/div[1]/app-files-menu/div"));
 		if (files_plusBTN.getCssValue("box-shadow").equalsIgnoreCase("rgba(70, 165, 237, 0.27) 0px 2px 6px 0px"))

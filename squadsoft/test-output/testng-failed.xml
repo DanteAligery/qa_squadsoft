@@ -3,21 +3,13 @@
 <suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="squad.profile.elements">
+      <class name="squad.compose.main_menu">
         <methods>
-          <include name="profile_card_H"/>
-          <include name="sidebar_groups_title_H"/>
-          <include name="profile_contacts_cellphone_W"/>
-          <include name="profile_contacts_cellphone_H"/>
-          <include name="sidebar_groups_H"/>
-          <include name="sidebar_UserFiles_H"/>
-          <include name="setup"/>
-          <include name="sidebar_UserFiles_title_H"/>
-          <include name="sidebar_collegues_H"/>
-          <include name="sidebar_collegues_title_H"/>
+          <include name="header_H"/>
           <include name="tearDown"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- squad.profile.elements -->
+      </class> <!-- squad.compose.main_menu -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
