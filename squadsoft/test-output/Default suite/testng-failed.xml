@@ -3,13 +3,18 @@
 <suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="squad.compose.main_menu">
+      <class name="squad.compose.Sidebar">
         <methods>
-          <include name="header_H"/>
+          <include name="sidebar_collegues_title_H"/>
           <include name="tearDown"/>
+          <include name="sidebar_UserFiles_H"/>
           <include name="setup"/>
+          <include name="sidebar_groups_H"/>
+          <include name="sidebar_groups_title_H"/>
+          <include name="sidebar_collegues_H"/>
+          <include name="sidebar_UserFiles_title_H"/>
         </methods>
-      </class> <!-- squad.compose.main_menu -->
+      </class> <!-- squad.compose.Sidebar -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

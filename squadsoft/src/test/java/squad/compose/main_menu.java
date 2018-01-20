@@ -94,6 +94,60 @@ public class main_menu {
 		}
 	}	
 		
+	@Test(groups = "Верстка. Шапка")
+	public void container_logoNmenu_W() {
+	/*
+		WebElement logoNmenu = Cdriver.findElement(By.xpath("/html/body/form/div[5]/app-squadspace/squadspace-header/div/div"));
+		if (logoNmenu.getCssValue("width").equalsIgnoreCase("1000px"))
+		{	
+			System.out.println("Ширина контейнера :		" + logoNmenu.getCssValue("width"));	
+		}
+		else
+		{
+			throw new RuntimeException ("Ширина контейнера " + logoNmenu.getCssValue("width") + " не соответствует 1000px");
+		}
+		*/
+	}	
+		
+	@Test(groups = "Верстка. Шапка")
+	public void container_avaterName_name_fontfamily() {
+		WebElement avaterName = Cdriver.findElement(By.xpath("/html/body/form/div[5]/app-squadspace/squadspace-header/div/div/div[2]/div/span"));
+		if (avaterName.getCssValue("font-family").equalsIgnoreCase("\"Open Sans\", sans-serif"))
+		{	
+			System.out.println("Имя профиля. Семейство шрифта :		" + avaterName.getCssValue("font-family"));	
+		}
+		else
+		{
+			throw new RuntimeException ("Семейство шрифта в имени профиля" + avaterName.getCssValue("font-family") + " не соответствует 'Open Sans, sans-serif'");
+		}
+		
+	}	
+	@Test(groups = "Верстка. Шапка")
+	public void container_avaterName_name_fontsize() {
+		WebElement avaterName = Cdriver.findElement(By.xpath("/html/body/form/div[5]/app-squadspace/squadspace-header/div/div/div[2]/div/span"));
+		if (avaterName.getCssValue("font-size").equalsIgnoreCase("14px"))
+		{	
+			System.out.println("Имя профиля. Размер шрифта :		" + avaterName.getCssValue("font-size"));	
+		}
+		else
+		{
+			throw new RuntimeException ("Размер шрифта в имени профиля" + avaterName.getCssValue("font-size") + " не соответствует 14px");
+		}
+		
+	}
+	@Test(groups = "Верстка. Шапка")
+	public void container_avaterName_name_fontweight() {
+		WebElement avaterName = Cdriver.findElement(By.xpath("/html/body/form/div[5]/app-squadspace/squadspace-header/div/div/div[2]/div/span"));
+		if (avaterName.getCssValue("font-weight").equalsIgnoreCase("400"))
+		{	
+			System.out.println("Имя профиля. Толщина шрифта :		" + avaterName.getCssValue("font-weight"));	
+		}
+		else
+		{
+			throw new RuntimeException ("Толщина шрифта в имени профиля" + avaterName.getCssValue("font-weight") + " не соответствует 400");
+		}
+		
+	}
 		/*
 		//жмем кнопку меню
 		WebElement main_menu_btn = Cdriver.findElement(By.xpath("/html/body/form/div[5]/app-squadspace/squadspace-header/div/div/div[1]/div"));

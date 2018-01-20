@@ -1,43 +1,421 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="6" ignored="0" total="70" passed="64">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="10547" started-at="2018-01-17T17:02:25Z" finished-at="2018-01-17T17:02:36Z">
+  <suite name="Default suite" duration-ms="9219" started-at="2018-01-20T12:03:22Z" finished-at="2018-01-20T12:03:31Z">
     <groups>
-      <group name="Верстка. Шапка">
-        <method signature="main_menu.container_W()[pri:0, instance:squad.compose.main_menu@42e26948]" name="container_W" class="squad.compose.main_menu"/>
-        <method signature="main_menu.header_H()[pri:0, instance:squad.compose.main_menu@42e26948]" name="header_H" class="squad.compose.main_menu"/>
-        <method signature="main_menu.header_W()[pri:0, instance:squad.compose.main_menu@42e26948]" name="header_W" class="squad.compose.main_menu"/>
-        <method signature="main_menu.title()[pri:0, instance:squad.compose.main_menu@42e26948]" name="title" class="squad.compose.main_menu"/>
-      </group> <!-- Верстка. Шапка -->
+      <group name="Верстка. Sidebar">
+        <method signature="Sidebar.sidebar_UserFiles_H()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_UserFiles_H" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_UserFiles_W()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_UserFiles_W" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_UserFiles_title_H()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_UserFiles_title_H" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_UserFiles_title_W()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_UserFiles_title_W" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_collegues_H()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_collegues_H" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_collegues_W()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_collegues_W" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_collegues_plusBTN_BBC()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_collegues_plusBTN_BBC" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_collegues_plusBTN_BLC()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_collegues_plusBTN_BLC" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_collegues_plusBTN_BRBL()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_collegues_plusBTN_BRBL" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_collegues_plusBTN_BRBR()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_collegues_plusBTN_BRBR" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_collegues_plusBTN_BRC()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_collegues_plusBTN_BRC" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_collegues_plusBTN_BRTL()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_collegues_plusBTN_BRTL" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_collegues_plusBTN_BRTR()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_collegues_plusBTN_BRTR" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_collegues_plusBTN_BTC()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_collegues_plusBTN_BTC" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_collegues_plusBTN_H()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_collegues_plusBTN_H" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_collegues_plusBTN_W()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_collegues_plusBTN_W" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_collegues_plusBTN_bgcolor()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_collegues_plusBTN_bgcolor" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_collegues_plusBTN_shadow()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_collegues_plusBTN_shadow" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_collegues_title_H()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_collegues_title_H" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_collegues_title_W()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_collegues_title_W" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_collegues_title_count_H()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_collegues_title_count_H" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_collegues_title_count_W()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_collegues_title_count_W" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_collegues_title_count_fontfamily()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_collegues_title_count_fontfamily" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_collegues_title_count_fontsize()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_collegues_title_count_fontsize" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_collegues_title_count_fontweight()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_collegues_title_count_fontweight" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_collegues_title_name_H()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_collegues_title_name_H" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_collegues_title_name_W()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_collegues_title_name_W" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_collegues_title_name_fontfamily()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_collegues_title_name_fontfamily" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_collegues_title_name_fontsize()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_collegues_title_name_fontsize" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_collegues_title_name_fontweight()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_collegues_title_name_fontweight" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_files_plusBTN_BRBL()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_files_plusBTN_BRBL" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_files_plusBTN_BRBR()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_files_plusBTN_BRBR" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_files_plusBTN_BRC()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_files_plusBTN_BRC" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_files_plusBTN_BRTL()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_files_plusBTN_BRTL" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_files_plusBTN_BRTR()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_files_plusBTN_BRTR" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_files_plusBTN_BTC()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_files_plusBTN_BTC" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_files_plusBTN_H()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_files_plusBTN_H" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_files_plusBTN_W()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_files_plusBTN_W" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_files_title_name_W()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_files_title_name_W" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_files_title_name_fontfamily()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_files_title_name_fontfamily" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_files_title_name_fontsize()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_files_title_name_fontsize" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_files_title_name_fontweight()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_files_title_name_fontweight" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_filesplusBTN_BBC()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_filesplusBTN_BBC" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_filesplusBTN_bgcolor()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_filesplusBTN_bgcolor" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_groups_H()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_groups_H" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_groups_W()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_groups_W" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_groups_plusBTN_BBC()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_groups_plusBTN_BBC" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_groups_plusBTN_BLC()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_groups_plusBTN_BLC" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_groups_plusBTN_BRBL()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_groups_plusBTN_BRBL" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_groups_plusBTN_BRBR()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_groups_plusBTN_BRBR" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_groups_plusBTN_BRC()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_groups_plusBTN_BRC" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_groups_plusBTN_BRTL()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_groups_plusBTN_BRTL" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_groups_plusBTN_BRTR()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_groups_plusBTN_BRTR" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_groups_plusBTN_BTC()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_groups_plusBTN_BTC" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_groups_plusBTN_H()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_groups_plusBTN_H" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_groups_plusBTN_W()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_groups_plusBTN_W" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_groups_plusBTN_bgcolor()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_groups_plusBTN_bgcolor" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_groups_plusBTN_shadow()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_groups_plusBTN_shadow" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_groups_title_H()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_groups_title_H" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_groups_title_W()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_groups_title_W" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_groups_title_count_H()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_groups_title_count_H" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_groups_title_count_W()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_groups_title_count_W" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_groups_title_count_fontfamily()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_groups_title_count_fontfamily" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_groups_title_count_fontsize()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_groups_title_count_fontsize" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_groups_title_count_fontweight()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_groups_title_count_fontweight" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_groups_title_name_H()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_groups_title_name_H" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_groups_title_name_W()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_groups_title_name_W" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_groups_title_name_fontfamily()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_groups_title_name_fontfamily" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_groups_title_name_fontsize()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_groups_title_name_fontsize" class="squad.compose.Sidebar"/>
+        <method signature="Sidebar.sidebar_groups_title_name_fontweight()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_groups_title_name_fontweight" class="squad.compose.Sidebar"/>
+      </group> <!-- Верстка. Sidebar -->
     </groups>
-    <test name="Default test" duration-ms="10547" started-at="2018-01-17T17:02:25Z" finished-at="2018-01-17T17:02:36Z">
-      <class name="squad.compose.main_menu">
-        <test-method status="PASS" signature="setup()[pri:0, instance:squad.compose.main_menu@42e26948]" name="setup" is-config="true" duration-ms="9449" started-at="2018-01-17T20:02:25Z" finished-at="2018-01-17T20:02:35Z">
+    <test name="Default test" duration-ms="9219" started-at="2018-01-20T12:03:22Z" finished-at="2018-01-20T12:03:31Z">
+      <class name="squad.compose.Sidebar">
+        <test-method status="PASS" signature="setup()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="setup" is-config="true" duration-ms="5268" started-at="2018-01-20T15:03:22Z" finished-at="2018-01-20T15:03:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="container_W()[pri:0, instance:squad.compose.main_menu@42e26948]" name="container_W" duration-ms="187" started-at="2018-01-17T20:02:35Z" finished-at="2018-01-17T20:02:35Z">
+        <test-method status="FAIL" signature="sidebar_UserFiles_H()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_UserFiles_H" duration-ms="174" started-at="2018-01-20T15:03:28Z" finished-at="2018-01-20T15:03:28Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[Высота блока 'Файлы' 230px не соответствует 208px]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: Высота блока 'Файлы' 230px не соответствует 208pxat squad.compose.Sidebar.sidebar_UserFiles_H(Sidebar.java:735)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.lang.reflect.Method.invoke(Method.java:498)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- container_W -->
-        <test-method status="PASS" signature="header_H()[pri:0, instance:squad.compose.main_menu@42e26948]" name="header_H" duration-ms="212" started-at="2018-01-17T20:02:35Z" finished-at="2018-01-17T20:02:35Z">
+        </test-method> <!-- sidebar_UserFiles_H -->
+        <test-method status="PASS" signature="sidebar_UserFiles_W()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_UserFiles_W" duration-ms="66" started-at="2018-01-20T15:03:28Z" finished-at="2018-01-20T15:03:28Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- header_H -->
-        <test-method status="PASS" signature="header_W()[pri:0, instance:squad.compose.main_menu@42e26948]" name="header_W" duration-ms="168" started-at="2018-01-17T20:02:35Z" finished-at="2018-01-17T20:02:35Z">
+        </test-method> <!-- sidebar_UserFiles_W -->
+        <test-method status="FAIL" signature="sidebar_UserFiles_title_H()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_UserFiles_title_H" duration-ms="68" started-at="2018-01-20T15:03:28Z" finished-at="2018-01-20T15:03:28Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[Высота заголовка блока 'Файлы' 35px не соответствует 50px]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: Высота заголовка блока 'Файлы' 35px не соответствует 50pxat squad.compose.Sidebar.sidebar_UserFiles_title_H(Sidebar.java:764)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.lang.reflect.Method.invoke(Method.java:498)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- header_W -->
-        <test-method status="PASS" signature="title()[pri:0, instance:squad.compose.main_menu@42e26948]" name="title" duration-ms="259" started-at="2018-01-17T20:02:35Z" finished-at="2018-01-17T20:02:35Z">
+        </test-method> <!-- sidebar_UserFiles_title_H -->
+        <test-method status="PASS" signature="sidebar_UserFiles_title_W()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_UserFiles_title_W" duration-ms="189" started-at="2018-01-20T15:03:28Z" finished-at="2018-01-20T15:03:28Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- title -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:squad.compose.main_menu@42e26948]" name="tearDown" is-config="true" duration-ms="173" started-at="2018-01-17T20:02:35Z" finished-at="2018-01-17T20:02:36Z">
+        </test-method> <!-- sidebar_UserFiles_title_W -->
+        <test-method status="FAIL" signature="sidebar_collegues_H()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_collegues_H" duration-ms="78" started-at="2018-01-20T15:03:28Z" finished-at="2018-01-20T15:03:28Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[Высота блока 'Коллеги' 100px не соответствует значению 110px]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: Высота блока 'Коллеги' 100px не соответствует значению 110pxat squad.compose.Sidebar.sidebar_collegues_H(Sidebar.java:35)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.lang.reflect.Method.invoke(Method.java:498)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_collegues_H -->
+        <test-method status="PASS" signature="sidebar_collegues_W()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_collegues_W" duration-ms="78" started-at="2018-01-20T15:03:28Z" finished-at="2018-01-20T15:03:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_collegues_W -->
+        <test-method status="PASS" signature="sidebar_collegues_plusBTN_BBC()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_collegues_plusBTN_BBC" duration-ms="64" started-at="2018-01-20T15:03:28Z" finished-at="2018-01-20T15:03:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_collegues_plusBTN_BBC -->
+        <test-method status="PASS" signature="sidebar_collegues_plusBTN_BLC()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_collegues_plusBTN_BLC" duration-ms="63" started-at="2018-01-20T15:03:28Z" finished-at="2018-01-20T15:03:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_collegues_plusBTN_BLC -->
+        <test-method status="PASS" signature="sidebar_collegues_plusBTN_BRBL()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_collegues_plusBTN_BRBL" duration-ms="44" started-at="2018-01-20T15:03:28Z" finished-at="2018-01-20T15:03:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_collegues_plusBTN_BRBL -->
+        <test-method status="PASS" signature="sidebar_collegues_plusBTN_BRBR()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_collegues_plusBTN_BRBR" duration-ms="47" started-at="2018-01-20T15:03:28Z" finished-at="2018-01-20T15:03:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_collegues_plusBTN_BRBR -->
+        <test-method status="PASS" signature="sidebar_collegues_plusBTN_BRC()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_collegues_plusBTN_BRC" duration-ms="48" started-at="2018-01-20T15:03:28Z" finished-at="2018-01-20T15:03:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_collegues_plusBTN_BRC -->
+        <test-method status="PASS" signature="sidebar_collegues_plusBTN_BRTL()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_collegues_plusBTN_BRTL" duration-ms="48" started-at="2018-01-20T15:03:29Z" finished-at="2018-01-20T15:03:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_collegues_plusBTN_BRTL -->
+        <test-method status="PASS" signature="sidebar_collegues_plusBTN_BRTR()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_collegues_plusBTN_BRTR" duration-ms="55" started-at="2018-01-20T15:03:29Z" finished-at="2018-01-20T15:03:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_collegues_plusBTN_BRTR -->
+        <test-method status="PASS" signature="sidebar_collegues_plusBTN_BTC()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_collegues_plusBTN_BTC" duration-ms="50" started-at="2018-01-20T15:03:29Z" finished-at="2018-01-20T15:03:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_collegues_plusBTN_BTC -->
+        <test-method status="PASS" signature="sidebar_collegues_plusBTN_H()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_collegues_plusBTN_H" duration-ms="48" started-at="2018-01-20T15:03:29Z" finished-at="2018-01-20T15:03:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_collegues_plusBTN_H -->
+        <test-method status="PASS" signature="sidebar_collegues_plusBTN_W()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_collegues_plusBTN_W" duration-ms="66" started-at="2018-01-20T15:03:29Z" finished-at="2018-01-20T15:03:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_collegues_plusBTN_W -->
+        <test-method status="PASS" signature="sidebar_collegues_plusBTN_bgcolor()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_collegues_plusBTN_bgcolor" duration-ms="43" started-at="2018-01-20T15:03:29Z" finished-at="2018-01-20T15:03:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_collegues_plusBTN_bgcolor -->
+        <test-method status="PASS" signature="sidebar_collegues_plusBTN_shadow()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_collegues_plusBTN_shadow" duration-ms="50" started-at="2018-01-20T15:03:29Z" finished-at="2018-01-20T15:03:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_collegues_plusBTN_shadow -->
+        <test-method status="FAIL" signature="sidebar_collegues_title_H()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_collegues_title_H" duration-ms="52" started-at="2018-01-20T15:03:29Z" finished-at="2018-01-20T15:03:29Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[Высота заголовка блока 'Коллеги' 35px не соответствует значению 50px]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: Высота заголовка блока 'Коллеги' 35px не соответствует значению 50pxat squad.compose.Sidebar.sidebar_collegues_title_H(Sidebar.java:61)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.lang.reflect.Method.invoke(Method.java:498)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_collegues_title_H -->
+        <test-method status="PASS" signature="sidebar_collegues_title_W()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_collegues_title_W" duration-ms="46" started-at="2018-01-20T15:03:29Z" finished-at="2018-01-20T15:03:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_collegues_title_W -->
+        <test-method status="PASS" signature="sidebar_collegues_title_count_H()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_collegues_title_count_H" duration-ms="59" started-at="2018-01-20T15:03:29Z" finished-at="2018-01-20T15:03:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_collegues_title_count_H -->
+        <test-method status="PASS" signature="sidebar_collegues_title_count_W()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_collegues_title_count_W" duration-ms="48" started-at="2018-01-20T15:03:29Z" finished-at="2018-01-20T15:03:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_collegues_title_count_W -->
+        <test-method status="PASS" signature="sidebar_collegues_title_count_fontfamily()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_collegues_title_count_fontfamily" duration-ms="53" started-at="2018-01-20T15:03:29Z" finished-at="2018-01-20T15:03:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_collegues_title_count_fontfamily -->
+        <test-method status="PASS" signature="sidebar_collegues_title_count_fontsize()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_collegues_title_count_fontsize" duration-ms="51" started-at="2018-01-20T15:03:29Z" finished-at="2018-01-20T15:03:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_collegues_title_count_fontsize -->
+        <test-method status="PASS" signature="sidebar_collegues_title_count_fontweight()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_collegues_title_count_fontweight" duration-ms="43" started-at="2018-01-20T15:03:29Z" finished-at="2018-01-20T15:03:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_collegues_title_count_fontweight -->
+        <test-method status="PASS" signature="sidebar_collegues_title_name_H()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_collegues_title_name_H" duration-ms="52" started-at="2018-01-20T15:03:29Z" finished-at="2018-01-20T15:03:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_collegues_title_name_H -->
+        <test-method status="PASS" signature="sidebar_collegues_title_name_W()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_collegues_title_name_W" duration-ms="45" started-at="2018-01-20T15:03:29Z" finished-at="2018-01-20T15:03:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_collegues_title_name_W -->
+        <test-method status="PASS" signature="sidebar_collegues_title_name_fontfamily()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_collegues_title_name_fontfamily" duration-ms="42" started-at="2018-01-20T15:03:29Z" finished-at="2018-01-20T15:03:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_collegues_title_name_fontfamily -->
+        <test-method status="PASS" signature="sidebar_collegues_title_name_fontsize()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_collegues_title_name_fontsize" duration-ms="46" started-at="2018-01-20T15:03:29Z" finished-at="2018-01-20T15:03:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_collegues_title_name_fontsize -->
+        <test-method status="PASS" signature="sidebar_collegues_title_name_fontweight()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_collegues_title_name_fontweight" duration-ms="43" started-at="2018-01-20T15:03:29Z" finished-at="2018-01-20T15:03:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_collegues_title_name_fontweight -->
+        <test-method status="PASS" signature="sidebar_files_plusBTN_BRBL()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_files_plusBTN_BRBL" duration-ms="53" started-at="2018-01-20T15:03:29Z" finished-at="2018-01-20T15:03:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_files_plusBTN_BRBL -->
+        <test-method status="PASS" signature="sidebar_files_plusBTN_BRBR()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_files_plusBTN_BRBR" duration-ms="48" started-at="2018-01-20T15:03:30Z" finished-at="2018-01-20T15:03:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_files_plusBTN_BRBR -->
+        <test-method status="PASS" signature="sidebar_files_plusBTN_BRC()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_files_plusBTN_BRC" duration-ms="67" started-at="2018-01-20T15:03:30Z" finished-at="2018-01-20T15:03:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_files_plusBTN_BRC -->
+        <test-method status="PASS" signature="sidebar_files_plusBTN_BRTL()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_files_plusBTN_BRTL" duration-ms="44" started-at="2018-01-20T15:03:30Z" finished-at="2018-01-20T15:03:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_files_plusBTN_BRTL -->
+        <test-method status="PASS" signature="sidebar_files_plusBTN_BRTR()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_files_plusBTN_BRTR" duration-ms="50" started-at="2018-01-20T15:03:30Z" finished-at="2018-01-20T15:03:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_files_plusBTN_BRTR -->
+        <test-method status="PASS" signature="sidebar_files_plusBTN_BTC()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_files_plusBTN_BTC" duration-ms="43" started-at="2018-01-20T15:03:30Z" finished-at="2018-01-20T15:03:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_files_plusBTN_BTC -->
+        <test-method status="PASS" signature="sidebar_files_plusBTN_H()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_files_plusBTN_H" duration-ms="47" started-at="2018-01-20T15:03:30Z" finished-at="2018-01-20T15:03:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_files_plusBTN_H -->
+        <test-method status="PASS" signature="sidebar_files_plusBTN_W()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_files_plusBTN_W" duration-ms="47" started-at="2018-01-20T15:03:30Z" finished-at="2018-01-20T15:03:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_files_plusBTN_W -->
+        <test-method status="PASS" signature="sidebar_files_title_name_W()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_files_title_name_W" duration-ms="51" started-at="2018-01-20T15:03:30Z" finished-at="2018-01-20T15:03:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_files_title_name_W -->
+        <test-method status="PASS" signature="sidebar_files_title_name_fontfamily()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_files_title_name_fontfamily" duration-ms="42" started-at="2018-01-20T15:03:30Z" finished-at="2018-01-20T15:03:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_files_title_name_fontfamily -->
+        <test-method status="PASS" signature="sidebar_files_title_name_fontsize()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_files_title_name_fontsize" duration-ms="43" started-at="2018-01-20T15:03:30Z" finished-at="2018-01-20T15:03:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_files_title_name_fontsize -->
+        <test-method status="PASS" signature="sidebar_files_title_name_fontweight()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_files_title_name_fontweight" duration-ms="47" started-at="2018-01-20T15:03:30Z" finished-at="2018-01-20T15:03:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_files_title_name_fontweight -->
+        <test-method status="PASS" signature="sidebar_filesplusBTN_BBC()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_filesplusBTN_BBC" duration-ms="40" started-at="2018-01-20T15:03:30Z" finished-at="2018-01-20T15:03:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_filesplusBTN_BBC -->
+        <test-method status="PASS" signature="sidebar_filesplusBTN_bgcolor()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_filesplusBTN_bgcolor" duration-ms="40" started-at="2018-01-20T15:03:30Z" finished-at="2018-01-20T15:03:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_filesplusBTN_bgcolor -->
+        <test-method status="FAIL" signature="sidebar_groups_H()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_groups_H" duration-ms="48" started-at="2018-01-20T15:03:30Z" finished-at="2018-01-20T15:03:30Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[Высота блока 'Группы' 173px не соответствует 176px]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: Высота блока 'Группы' 173px не соответствует 176pxat squad.compose.Sidebar.sidebar_groups_H(Sidebar.java:390)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.lang.reflect.Method.invoke(Method.java:498)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_groups_H -->
+        <test-method status="PASS" signature="sidebar_groups_W()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_groups_W" duration-ms="41" started-at="2018-01-20T15:03:30Z" finished-at="2018-01-20T15:03:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_groups_W -->
+        <test-method status="PASS" signature="sidebar_groups_plusBTN_BBC()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_groups_plusBTN_BBC" duration-ms="49" started-at="2018-01-20T15:03:30Z" finished-at="2018-01-20T15:03:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_groups_plusBTN_BBC -->
+        <test-method status="PASS" signature="sidebar_groups_plusBTN_BLC()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_groups_plusBTN_BLC" duration-ms="44" started-at="2018-01-20T15:03:30Z" finished-at="2018-01-20T15:03:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_groups_plusBTN_BLC -->
+        <test-method status="PASS" signature="sidebar_groups_plusBTN_BRBL()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_groups_plusBTN_BRBL" duration-ms="41" started-at="2018-01-20T15:03:30Z" finished-at="2018-01-20T15:03:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_groups_plusBTN_BRBL -->
+        <test-method status="PASS" signature="sidebar_groups_plusBTN_BRBR()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_groups_plusBTN_BRBR" duration-ms="46" started-at="2018-01-20T15:03:30Z" finished-at="2018-01-20T15:03:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_groups_plusBTN_BRBR -->
+        <test-method status="PASS" signature="sidebar_groups_plusBTN_BRC()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_groups_plusBTN_BRC" duration-ms="41" started-at="2018-01-20T15:03:30Z" finished-at="2018-01-20T15:03:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_groups_plusBTN_BRC -->
+        <test-method status="PASS" signature="sidebar_groups_plusBTN_BRTL()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_groups_plusBTN_BRTL" duration-ms="50" started-at="2018-01-20T15:03:30Z" finished-at="2018-01-20T15:03:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_groups_plusBTN_BRTL -->
+        <test-method status="PASS" signature="sidebar_groups_plusBTN_BRTR()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_groups_plusBTN_BRTR" duration-ms="45" started-at="2018-01-20T15:03:31Z" finished-at="2018-01-20T15:03:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_groups_plusBTN_BRTR -->
+        <test-method status="PASS" signature="sidebar_groups_plusBTN_BTC()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_groups_plusBTN_BTC" duration-ms="43" started-at="2018-01-20T15:03:31Z" finished-at="2018-01-20T15:03:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_groups_plusBTN_BTC -->
+        <test-method status="PASS" signature="sidebar_groups_plusBTN_H()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_groups_plusBTN_H" duration-ms="39" started-at="2018-01-20T15:03:31Z" finished-at="2018-01-20T15:03:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_groups_plusBTN_H -->
+        <test-method status="PASS" signature="sidebar_groups_plusBTN_W()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_groups_plusBTN_W" duration-ms="46" started-at="2018-01-20T15:03:31Z" finished-at="2018-01-20T15:03:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_groups_plusBTN_W -->
+        <test-method status="PASS" signature="sidebar_groups_plusBTN_bgcolor()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_groups_plusBTN_bgcolor" duration-ms="46" started-at="2018-01-20T15:03:31Z" finished-at="2018-01-20T15:03:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_groups_plusBTN_bgcolor -->
+        <test-method status="PASS" signature="sidebar_groups_plusBTN_shadow()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_groups_plusBTN_shadow" duration-ms="43" started-at="2018-01-20T15:03:31Z" finished-at="2018-01-20T15:03:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_groups_plusBTN_shadow -->
+        <test-method status="FAIL" signature="sidebar_groups_title_H()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_groups_title_H" duration-ms="61" started-at="2018-01-20T15:03:31Z" finished-at="2018-01-20T15:03:31Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[Высота заголовка блока 'Группы' 35px не соответствует 50px]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: Высота заголовка блока 'Группы' 35px не соответствует 50pxat squad.compose.Sidebar.sidebar_groups_title_H(Sidebar.java:419)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)at java.lang.reflect.Method.invoke(Method.java:498)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_groups_title_H -->
+        <test-method status="PASS" signature="sidebar_groups_title_W()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_groups_title_W" duration-ms="42" started-at="2018-01-20T15:03:31Z" finished-at="2018-01-20T15:03:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_groups_title_W -->
+        <test-method status="PASS" signature="sidebar_groups_title_count_H()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_groups_title_count_H" duration-ms="51" started-at="2018-01-20T15:03:31Z" finished-at="2018-01-20T15:03:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_groups_title_count_H -->
+        <test-method status="PASS" signature="sidebar_groups_title_count_W()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_groups_title_count_W" duration-ms="43" started-at="2018-01-20T15:03:31Z" finished-at="2018-01-20T15:03:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_groups_title_count_W -->
+        <test-method status="PASS" signature="sidebar_groups_title_count_fontfamily()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_groups_title_count_fontfamily" duration-ms="52" started-at="2018-01-20T15:03:31Z" finished-at="2018-01-20T15:03:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_groups_title_count_fontfamily -->
+        <test-method status="PASS" signature="sidebar_groups_title_count_fontsize()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_groups_title_count_fontsize" duration-ms="47" started-at="2018-01-20T15:03:31Z" finished-at="2018-01-20T15:03:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_groups_title_count_fontsize -->
+        <test-method status="PASS" signature="sidebar_groups_title_count_fontweight()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_groups_title_count_fontweight" duration-ms="39" started-at="2018-01-20T15:03:31Z" finished-at="2018-01-20T15:03:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_groups_title_count_fontweight -->
+        <test-method status="PASS" signature="sidebar_groups_title_name_H()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_groups_title_name_H" duration-ms="52" started-at="2018-01-20T15:03:31Z" finished-at="2018-01-20T15:03:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_groups_title_name_H -->
+        <test-method status="PASS" signature="sidebar_groups_title_name_W()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_groups_title_name_W" duration-ms="40" started-at="2018-01-20T15:03:31Z" finished-at="2018-01-20T15:03:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_groups_title_name_W -->
+        <test-method status="PASS" signature="sidebar_groups_title_name_fontfamily()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_groups_title_name_fontfamily" duration-ms="40" started-at="2018-01-20T15:03:31Z" finished-at="2018-01-20T15:03:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_groups_title_name_fontfamily -->
+        <test-method status="PASS" signature="sidebar_groups_title_name_fontsize()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_groups_title_name_fontsize" duration-ms="39" started-at="2018-01-20T15:03:31Z" finished-at="2018-01-20T15:03:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_groups_title_name_fontsize -->
+        <test-method status="PASS" signature="sidebar_groups_title_name_fontweight()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="sidebar_groups_title_name_fontweight" duration-ms="41" started-at="2018-01-20T15:03:31Z" finished-at="2018-01-20T15:03:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sidebar_groups_title_name_fontweight -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:squad.compose.Sidebar@57baeedf]" name="tearDown" is-config="true" duration-ms="117" started-at="2018-01-20T15:03:31Z" finished-at="2018-01-20T15:03:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- squad.compose.main_menu -->
+      </class> <!-- squad.compose.Sidebar -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
