@@ -10,17 +10,16 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-//import org.openqa.selenium.support.Color;
-import squad.webdrv.*;
+
 
 
 public class profile {
-	static String driverPath = "/home/dante/QA/drivers/";
+	static String driverPath = "/home/dante/QA/squadsoft/driver/";
 	public WebDriver Cdriver;
 	
 	@BeforeClass
 	public void setup(){
-		System.setProperty("webdriver.chrome.driver", driverPath+"chromedriver_2.34");
+		System.setProperty("webdriver.chrome.driver", driverPath+"chromedriver_2.35");
 		System.out.println("*******************");
 		System.out.println("Запуск Chrome");
 		Cdriver = new ChromeDriver();

@@ -9,12 +9,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 
 public class Sidebar {
-	static String driverPath = "/home/dante/QA/drivers/";
+	static String driverPath = "/home/dante/QA/squadsoft/driver/";
 	public WebDriver Cdriver;
 	
 	@BeforeClass
 	public void setup(){
-		System.setProperty("webdriver.chrome.driver", driverPath+"chromedriver_2.34");
+		System.setProperty("webdriver.chrome.driver", driverPath+"chromedriver_2.35");
 		System.out.println("*******************");
 		System.out.println("Запуск Chrome");
 		Cdriver = new ChromeDriver();

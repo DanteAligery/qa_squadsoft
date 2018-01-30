@@ -11,13 +11,13 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 public class main_menu {
-	static String driverPath = "/home/dante/QA/drivers/";
+	static String driverPath = "/home/dante/QA/squadsoft/driver/";
 	public WebDriver Cdriver;
 	//static String PageWidth;
 	
 	@BeforeClass
 	public void setup(){
-		System.setProperty("webdriver.chrome.driver", driverPath+"chromedriver_2.34");
+		System.setProperty("webdriver.chrome.driver", driverPath+"chromedriver_2.35");
 		System.out.println("*******************");
 		System.out.println("Запуск Chrome");
 		Cdriver = new ChromeDriver();
