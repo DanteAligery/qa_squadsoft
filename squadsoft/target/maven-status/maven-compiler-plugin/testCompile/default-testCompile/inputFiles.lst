@@ -1,6 +1,6 @@
-/home/dante/QA/squadsoft/squadsoft/src/test/java/squad/FF.java
-/home/dante/QA/squadsoft/squadsoft/src/test/java/squad/webdrv.java
-/home/dante/QA/squadsoft/squadsoft/src/test/java/squad/profile/profile_fonts.java
-/home/dante/QA/squadsoft/squadsoft/src/test/java/squad/NewTest.java
-/home/dante/QA/squadsoft/squadsoft/src/test/java/squad/profile/elements.java
-/home/dante/QA/squadsoft/squadsoft/src/test/java/squad/chrome.java
+/home/dante/QA/squadsoft/src/test/java/squad/compose/Sidebar.java
+/home/dante/QA/squadsoft/src/test/java/squad/compose/profile.java
+/home/dante/QA/squadsoft/src/test/java/squad/compose/lenta.java
+/home/dante/QA/squadsoft/src/test/java/squad/webdriver.java
+/home/dante/QA/squadsoft/src/test/java/squad/compose/profile_fonts.java
+/home/dante/QA/squadsoft/src/test/java/squad/compose/main_menu.java

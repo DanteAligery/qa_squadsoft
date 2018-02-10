@@ -14,7 +14,7 @@ public class Sidebar {
 	
 	@BeforeClass
 	public void setup(){
-		System.setProperty("webdriver.chrome.driver", driverPath+"chromedriver_2.35");
+		System.setProperty("webdriver.chrome.driver", driverPath+"chromedriver");
 		System.out.println("*******************");
 		System.out.println("Запуск Chrome");
 		Cdriver = new ChromeDriver();
