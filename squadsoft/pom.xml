@@ -2,35 +2,56 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.squadsoft.selenium</groupId>
   <artifactId>squad</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.2-SNAPSHOT</version>
   <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependencies>
-    <dependency>
+    <!--dependency>
         <groupId>junit</groupId>
         <artifactId>junit-dep</artifactId>
         <version>4.11</version>
         <type>pom</type>
         <scope>test</scope>
-    </dependency>
+    </dependency-->
     <dependency>
         <groupId>org.seleniumhq.selenium</groupId>
         <artifactId>selenium-java</artifactId>
         <version>3.7.0</version>
     </dependency>
     <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>6.9.8</version>
+      <scope>test</scope>
+    </dependency>
+    <!--dependency>
+        <groupId>net.lightbody.bmp</groupId>
+        <artifactId>browsermob-core</artifactId>
+        <version>2.1.5</version>
+        <scope>test</scope>
+    </dependency-->
+    <dependency>
+        <groupId>net.lightbody.bmp</groupId>
+        <artifactId>browsermob-core</artifactId>
+        <version>2.1.5</version>
+        <scope>test</scope>
+        <exclusions>
+            <exclusion>
+                <groupId>org.seleniumhq.selenium</groupId>
+                <artifactId>selenium-api</artifactId>
+            </exclusion>
+        </exclusions>
+    </dependency>
+    <!--dependency>
         <groupId>org.junit.jupiter</groupId>
         <artifactId>junit-jupiter-api</artifactId>
-        <!--version>5.0.0-M4</version-->
         <version>5.0.2</version>
-        <!-- for writing tests "test" scope would suffice,
-        but extensions are defined in the project's "main" folder, so we need "compile" -->
         <scope>compile</scope>
     </dependency>
     <dependency>
         <groupId>org.junit.platform</groupId>
         <artifactId>junit-platform-launcher</artifactId>
         <version>1.0.2</version>
-    </dependency>
+    </dependency-->
 </dependencies>
 <build>
     <defaultGoal>install</defaultGoal>
@@ -56,13 +77,11 @@
                     <artifactId>junit-platform-surefire-provider</artifactId>
                     <version>1.0.0-M4</version>
                 </dependency>
-                <dependency>
-                    <!-- contains the engine that actually runs the Jupiter-tests -->
+                <!--dependency>
                     <groupId>org.junit.jupiter</groupId>
                     <artifactId>junit-jupiter-engine</artifactId>
                     <version>5.0.2</version>
-                    <!--version>5.0.0-M4</version-->
-                </dependency>
+                </dependency-->
             </dependencies>
         </plugin>
     </plugins>
