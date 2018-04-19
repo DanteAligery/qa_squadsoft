@@ -1,4 +1,4 @@
-package squad.compose;
+package squad.gui;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;

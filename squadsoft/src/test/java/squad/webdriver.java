@@ -17,7 +17,7 @@ import net.lightbody.bmp.client.ClientUtil;
 import net.lightbody.bmp.proxy.auth.AuthType;
 import net.lightbody.bmp.core.har.Har;
 import org.openqa.selenium.Proxy;
-import squad.virtPROXY;
+//import squad.virtPROXY;
 
 
 public class webdriver {
@@ -44,13 +44,13 @@ public class webdriver {
 	
 	public static void Chrome() {
 		System.setProperty("webdriver.chrome.driver", driverPath+"chromedriver");
-		squad.virtPROXY.initProxy();
+		//squad.virtPROXY.initProxy();
 		//System.setProperty("bmp.allowNativeDnsFallback", "true");
 		//BrowserMobProxyServer server = new BrowserMobProxyServer();
-		//server.chainedProxyAuthorization(Login, Password, AuthType.BASIC);
+		//server.chainedProxyAuthorization(Smoke, Password, AuthType.BASIC);
 		//System.out.println(server.newHar("har"));
 		//server.start();
-		//server.autoAuthorization("squad", Login, Password, AuthType.BASIC);
+		//server.autoAuthorization("squad", Smoke, Password, AuthType.BASIC);
 		//System.out.println("proxy start!");
 		//System.out.println(server.getServerBindAddress());
 		//Proxy proxy = ClientUtil.createSeleniumProxy(server);
@@ -67,7 +67,7 @@ public class webdriver {
 		//ChromeProfile.addEncodedExtensions("Proxy-Auto-Auth_v2.0.crx");
 		//capabilities.setCapability(CapabilityType.PROXY, proxy);
 		//capabilities.setCapability(ChromeOptions.CAPABILITY, ChromeProfile);
-		//proxy.setSocksUsername(Login);
+		//proxy.setSocksUsername(Smoke);
 		//proxy.setSocksPassword(Password);
 		  
 		 
@@ -80,7 +80,7 @@ public class webdriver {
 		//Alert alert = Cdriver.switchTo().alert();
 		//WebDriverWait wait = new WebDriverWait(Cdriver, 5);
 		//wait.until(ExpectedConditions.alertIsPresent());
-		//alert.authenticateUsing(new UserAndPassword(Login, Password));
+		//alert.authenticateUsing(new UserAndPassword(Smoke, Password));
 		
 		//System.out.println("catch alert");
 		/*	
@@ -107,7 +107,7 @@ public class webdriver {
 				Cdriver.findElement(By.id("alert"));
 				Alert alert = Cdriver.switchTo().alert();
 				System.out.println(alert.getText());
-				alert.sendKeys(Login);
+				alert.sendKeys(Smoke);
 			}
 			catch(NoAlertPresentException noAlert){
 				noAlert.getMessage();
@@ -119,7 +119,7 @@ public class webdriver {
 		//Cdriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		//Alert alert = Cdriver.switchTo().alert();
 		//System.out.println(alert.getText());
-		//alert.sendKeys(Login);
+		//alert.sendKeys(Smoke);
 		
 		//WebDriverWait wait = new WebDriverWait(Cdriver, 5);
 		//Alert alert = wait.until(ExpectedConditions.alertIsPresent());
@@ -138,14 +138,14 @@ public class webdriver {
 		WebDriverWait wait = new WebDriverWait(Cdriver, 3);
 		*/  
 		//Alert alert = wait.until(ExpectedConditions.alertIsPresent());
-		//alert.authenticateUsing(new UserAndPassword(Login, Password));
+		//alert.authenticateUsing(new UserAndPassword(Smoke, Password));
 		//Alert alert1 = (new WebDriverWait(Cdriver, 10)).until(ExpectedConditions.alertIsPresent());
 		//Cdriver.switchTo().alert();
 		//alert.authenticateUsing(LogoPass);
 		//Cdriver.switchTo().alert().authenticateUsing(LogoPass);
 		//alert1.accept();
 		//autentification.authenticateUsing(null);;
-		//autentification.authenticateUsing(new UserAndPassword(Login, **password**));
+		//autentification.authenticateUsing(new UserAndPassword(Smoke, **password**));
 		//Alert autentification = (Alert) (new WebDriverWait(Cdriver, 10));
 		//WebDriverWait wait = new WebDriverWait(driver, 10);
 		//ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath(mPanelXPATH));

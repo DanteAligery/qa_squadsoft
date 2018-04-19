@@ -1,4 +1,4 @@
-package squad.compose;
+package squad.gui;
 
 import org.testng.annotations.Test;
 import org.openqa.selenium.By;
@@ -17,12 +17,12 @@ public class main_menu {
 	
 	@BeforeClass
 	public void setup(){
-		System.setProperty("webdriver.chrome.driver", driverPath+"chromedriver_2.35");
+		System.setProperty("webdriver.chrome.driver", driverPath+"chromedriver");
 		System.out.println("*******************");
 		System.out.println("Запуск Chrome");
 		Cdriver = new ChromeDriver();
 		Cdriver.manage().window().maximize();
-		Cdriver.get ("http://lesnikov:qoO5QOE9@test-squadspace.squadsoft.ru/default.aspx/profile/5");
+		Cdriver.get ("http://lesnikov:qoO5QOE9@test-squadspace.squadsoft.ru/default.aspx/profile/8");
 		
 		//WebElement PageSize = Cdriver.findElement(By.xpath("//*[@id=\"DeltaPlaceHolderMain\"]"));
 		//System.out.println("Высота страницы:	" + PageSize.getCssValue("height"));

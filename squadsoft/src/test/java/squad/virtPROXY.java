@@ -1,79 +1,65 @@
 package squad;
-import net.lightbody.bmp.BrowserMobProxyServer;
-import net.lightbody.bmp.client.ClientUtil;
-import net.lightbody.bmp.core.har.Har;
-import net.lightbody.bmp.proxy.CaptureType;
-import net.lightbody.bmp.proxy.auth.AuthType;
-import net.lightbody.bmp.BrowserMobProxy;
-
-import java.net.InetAddress;
-import java.net.UnknownHostException;
-
-import org.openqa.selenium.Keys;
+import org.apache.http.auth.AuthScope;
+import org.apache.http.auth.NTCredentials;
+import org.apache.http.client.CredentialsProvider;
+import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.BasicCredentialsProvider;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClients;
 import org.openqa.selenium.Proxy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import io.netty.handler.codec.http.HttpRequest;
+import io.netty.handler.codec.http.HttpResponse;
+import net.lightbody.bmp.BrowserMobProxyServer;
+import net.lightbody.bmp.client.ClientUtil;
+import net.lightbody.bmp.filters.RequestFilter;
+import net.lightbody.bmp.util.HttpMessageContents;
+import net.lightbody.bmp.util.HttpMessageInfo;
+
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.URL;
+import java.net.URLConnection;
+import java.util.Base64;
+
 
 
 
 public class virtPROXY {
-	private static BrowserMobProxyServer server;
 	static String LentaURL = "http://test-squadspace.squadsoft.ru";
 	static String driverPath = "/home/dante/QA/squadsoft/driver/";
+	static String realm = "test-squadspace.squadsoft.ru";
+	static String userName = "lesnikov";
+	static String password = "qoO5QOE9";
+	static String soapMessage;
 	
-	public static void initProxy() {
-		//System.setProperty("bmp.allowNativeDnsFallback", "true");
-		//System.setProperty("Djava.net.preferIPv4Stack", "true");
-		BrowserMobProxyServer server = new BrowserMobProxyServer();
-		Har har = server.newHar();
 	
-		server.start();
-		System.out.println("Proxy завелся? " + server.isStarted());
-		System.out.println("Порт proxy " + server.getPort());
-		server.addHeader("WWW-Authenticate", "Basic");
-		//server.addHeader("Authorization.Type", "Basic");
-		server.addHeader("Authorization", "bGVzbmlrb3Y6cW9PNVFPRTk");
 
-		System.out.println(server.getAllHeaders());
-		//server.getAllHeaders();
-		//server.autoAuthorization("ru", "squadsoft/lesnikov", "qoO5QOE9", AuthType.BASIC);
-		Proxy Proxy = ClientUtil.createSeleniumProxy(server);
+	public static void proxy() throws Exception{
+		String basicAUTH = userName + ":" + password;
+    	String basicAUTHencoded = Base64.getEncoder().encodeToString(basicAUTH.getBytes());
+    	System.out.println(basicAUTHencoded);
+	    System.setProperty("webdriver.chrome.driver", driverPath+"chromedriver");
+		BrowserMobProxyServer server = new BrowserMobProxyServer();
 		
-		try {
-			InetAddress.getLocalHost().getHostName();
-		} catch (UnknownHostException e) {
-			e.printStackTrace();
-		}
+		URL url = new URL(LentaURL);
+		URLConnection urlConnection = url.openConnection();
+		urlConnection.setRequestProperty("WWW-Authenticate", "NTLM");
+        urlConnection.setRequestProperty("WWW-Authenticate", "Basic " + basicAUTHencoded);
+        InputStream is = urlConnection.getInputStream();
+        InputStreamReader isr = new InputStreamReader(is);
+
 		
-		System.setProperty("webdriver.chrome.driver", driverPath+"chromedriver");
-		ChromeOptions ChromeProfile = new ChromeOptions();
-		//ChromeProfile.addArguments("chrome.switches", "--disable-extensions");
-		//ChromeProfile.addArguments("disable-popup-blocking");
-		//ChromeProfile.addArguments("--proxy-server=127.0.0.1:" + server.getPort());
+		server.start();
+		System.out.println("proxy start!");
 		
-		DesiredCapabilities capabilities = new DesiredCapabilities();
-		capabilities.setCapability(CapabilityType.PROXY, Proxy);
-		capabilities.setCapability(ChromeOptions.CAPABILITY, ChromeProfile);
-		System.out.println("Запуск браузера");
-		WebDriver Cdriver= new ChromeDriver(ChromeProfile);
-		//server.enableHarCaptureTypes(CaptureType.REQUEST_CONTENT, CaptureType.RESPONSE_CONTENT);
-		Cdriver.manage().window().maximize();
-		System.out.println(server.getHar());
-		//server.getHar();
-		System.out.println("window run");
-	
-		Cdriver.get(LentaURL);
-		//Actions sendK = new Actions (Cdriver); 
-		//sendK.sendKeys("lesnikov");
-		server.stop();
 		
-	}
-	 public static void stopProxy() {
-		 //server.stop();
-		 System.out.println("Proxy остановлен");
+
+		
 	 }
-}
+	}

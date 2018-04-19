@@ -1,4 +1,4 @@
-package squad.compose;
+package squad.gui;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -9,26 +9,28 @@ import org.testng.annotations.BeforeClass;
 //import org.testng.SkipException;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
-import org.openqa.selenium.support.ui.ExpectedConditions;
+
 import squad.webdriver;
+
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 
 
 public class profile {
-	//static String driverPath = "/home/dante/QA/squadsoft/driver/";
+	static String driverPath = "/home/dante/QA/squadsoft/driver/";
 	public WebDriver Cdriver;
 	
 	@BeforeClass
 	public void setup(){
-		/*
-		System.setProperty("webdriver.chrome.driver", driverPath+"chromedriver_2.35");
+		
+		System.setProperty("webdriver.chrome.driver", driverPath+"chromedriver");
 		System.out.println("*******************");
 		System.out.println("Запуск Chrome");
 		Cdriver = new ChromeDriver();
 		Cdriver.manage().window().maximize();
-		Cdriver.get ("http://lesnikov:qoO5QOE9@test-squadspace.squadsoft.ru/default.aspx/profile/5");
-		*/
-		squad.webdriver.Chrome();
+		Cdriver.get ("http://lesnikov:qoO5QOE9@test-squadspace.squadsoft.ru/default.aspx/profile/8");
+		
+		//squad.webdriver.Chrome();
 		
 		//Cdriver.get("http://" + LogoPass + LentaURL + sq);
 		//http://test-squadspace.squadsoft.ru/default.aspx/profile/5

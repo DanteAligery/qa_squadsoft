@@ -1,6 +1,8 @@
-squad/compose/lenta.class
-squad/compose/main_menu.class
-squad/compose/Sidebar.class
+squad/gui/lenta.class
+squad/gui/main_menu.class
+squad/gui/profile.class
+squad/gui/profile_fonts.class
 squad/webdriver.class
-squad/compose/profile.class
-squad/compose/profile_fonts.class
+squad/gui/Sidebar.class
+squad/virtPROXY.class
+squad/api/Login.class
