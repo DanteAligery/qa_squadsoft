@@ -5,9 +5,9 @@
     <classes>
       <class name="squad.api.Smoke">
         <methods>
-          <include name="post"/>
           <include name="closeall"/>
           <include name="setup"/>
+          <include name="subscibe2me"/>
         </methods>
       </class> <!-- squad.api.Smoke -->
     </classes>

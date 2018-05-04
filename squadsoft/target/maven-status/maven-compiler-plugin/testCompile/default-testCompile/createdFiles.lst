@@ -1,8 +1,13 @@
-squad/gui/lenta.class
 squad/gui/main_menu.class
-squad/gui/profile.class
 squad/gui/profile_fonts.class
+squad/httpClient.class
+utils/content.class
 squad/webdriver.class
+squad/api/Smoke.class
+utils/commets.class
 squad/gui/Sidebar.class
+squad/gui/actions.class
+squad/gui/lenta.class
+squad/gui/profile.class
 squad/virtPROXY.class
-squad/api/Login.class
+squad/api/NewTest.class

@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-failed">Default suite</span>
+              <span class="suite-name border-skipped">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                    <span class="method-stats">14 methods,  1 skipped,  13 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods skipped suite-Default_suite"> (hide)</a> <!-- hide-methods skipped suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods skipped suite-Default_suite"> (show)</a> <!-- show-methods skipped suite-Default_suite -->
                     </span>
-                    <div class="method-list-content failed suite-Default_suite">
+                    <div class="method-list-content skipped suite-Default_suite">
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="squad.api.Smoke" hash-for-method="post">post</a> <!-- method navigator-link -->
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="squad.api.Smoke" hash-for-method="subscibe2me">subscibe2me</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Default_suite -->
+                    </div> <!-- method-list-content skipped suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -116,7 +116,67 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="squad.api.Smoke" hash-for-method="GetAllOnUsr">GetAllOnUsr</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="squad.api.Smoke" hash-for-method="Login">Login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="squad.api.Smoke" hash-for-method="dislike">dislike</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="squad.api.Smoke" hash-for-method="getFeed">getFeed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="squad.api.Smoke" hash-for-method="getFullFeed">getFullFeed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="squad.api.Smoke" hash-for-method="getusergroups">getusergroups</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="squad.api.Smoke" hash-for-method="like">like</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="squad.api.Smoke" hash-for-method="post">post</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="squad.api.Smoke" hash-for-method="search">search</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="squad.api.Smoke" hash-for-method="searchusers">searchusers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="squad.api.Smoke" hash-for-method="subscibe">subscibe</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="squad.api.Smoke" hash-for-method="subscibe2usrs">subscibe2usrs</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="squad.api.Smoke" hash-for-method="userdetale">userdetale</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -131,21 +191,19 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-failed">
+          <div class="suite-Default_suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">squad.api.Smoke</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="post">
-                  </a> <!-- post -->
-                  <span class="method-name">post</span>
-                  <div class="stack-trace">java.lang.Error: Unresolved compilation problem: 
-	client cannot be resolved
-
-	at squad.api.Smoke.post(Smoke.java:100)
+                  <a name="subscibe2me">
+                  </a> <!-- subscibe2me -->
+                  <span class="method-name">subscibe2me</span>
+                  <div class="stack-trace">org.testng.SkipException: Удалось подписаться на самого себя. Код ответа:  200
+	at squad.api.Smoke.subscibe2me(Smoke.java:578)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -176,7 +234,7 @@
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-failed -->
+          </div> <!-- suite-Default_suite-class-skipped -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -185,9 +243,93 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="GetAllOnUsr">
+                  </a> <!-- GetAllOnUsr -->
+                  <span class="method-name">GetAllOnUsr</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="Login">
                   </a> <!-- Login -->
                   <span class="method-name">Login</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="dislike">
+                  </a> <!-- dislike -->
+                  <span class="method-name">dislike</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getFeed">
+                  </a> <!-- getFeed -->
+                  <span class="method-name">getFeed</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getFullFeed">
+                  </a> <!-- getFullFeed -->
+                  <span class="method-name">getFullFeed</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getusergroups">
+                  </a> <!-- getusergroups -->
+                  <span class="method-name">getusergroups</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="like">
+                  </a> <!-- like -->
+                  <span class="method-name">like</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="post">
+                  </a> <!-- post -->
+                  <span class="method-name">post</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="search">
+                  </a> <!-- search -->
+                  <span class="method-name">search</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchusers">
+                  </a> <!-- searchusers -->
+                  <span class="method-name">searchusers</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="subscibe">
+                  </a> <!-- subscibe -->
+                  <span class="method-name">subscibe</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="subscibe2usrs">
+                  </a> <!-- subscibe2usrs -->
+                  <span class="method-name">subscibe2usrs</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="userdetale">
+                  </a> <!-- userdetale -->
+                  <span class="method-name">userdetale</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -195,7 +337,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/tmp/testng-eclipse-1142644488/testng-customsuite.xml</span>
+            <span class="header-content">/tmp/testng-eclipse--1855910653/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -244,20 +386,68 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(14);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Login')
 data.setCell(0, 2, 'squad.api.Smoke')
-data.setCell(0, 3, 1425);
+data.setCell(0, 3, 1035);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'post')
+data.setCell(1, 1, 'getusergroups')
 data.setCell(1, 2, 'squad.api.Smoke')
-data.setCell(1, 3, 2);
+data.setCell(1, 3, 992);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'GetAllOnUsr')
+data.setCell(2, 2, 'squad.api.Smoke')
+data.setCell(2, 3, 982);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'getFullFeed')
+data.setCell(3, 2, 'squad.api.Smoke')
+data.setCell(3, 3, 836);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'dislike')
+data.setCell(4, 2, 'squad.api.Smoke')
+data.setCell(4, 3, 691);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'subscibe2usrs')
+data.setCell(5, 2, 'squad.api.Smoke')
+data.setCell(5, 3, 611);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'search')
+data.setCell(6, 2, 'squad.api.Smoke')
+data.setCell(6, 3, 610);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'searchusers')
+data.setCell(7, 2, 'squad.api.Smoke')
+data.setCell(7, 3, 595);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'post')
+data.setCell(8, 2, 'squad.api.Smoke')
+data.setCell(8, 3, 583);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'getFeed')
+data.setCell(9, 2, 'squad.api.Smoke')
+data.setCell(9, 3, 554);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'like')
+data.setCell(10, 2, 'squad.api.Smoke')
+data.setCell(10, 3, 505);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'subscibe')
+data.setCell(11, 2, 'squad.api.Smoke')
+data.setCell(11, 3, 483);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'subscibe2me')
+data.setCell(12, 2, 'squad.api.Smoke')
+data.setCell(12, 3, 469);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'userdetale')
+data.setCell(13, 2, 'squad.api.Smoke')
+data.setCell(13, 3, 410);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 9 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -289,18 +479,64 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">Login</span>
-                <span class="method-start">14 ms</span>
+                <span class="method-name">GetAllOnUsr</span>
+                <span class="method-start">11 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
+                <span class="method-name">Login</span>
+                <span class="method-start">999 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">dislike</span>
+                <span class="method-start">2040 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getFeed</span>
+                <span class="method-start">2737 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getFullFeed</span>
+                <span class="method-start">3295 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getusergroups</span>
+                <span class="method-start">4136 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">like</span>
+                <span class="method-start">5131 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <span class="method-name">post</span>
-                <span class="method-start">1443 ms</span>
+                <span class="method-start">5636 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">search</span>
+                <span class="method-start">6223 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">searchusers</span>
+                <span class="method-start">6836 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">subscibe</span>
+                <span class="method-start">7434 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">subscibe2me</span>
+                <span class="method-start">7921 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">subscibe2usrs</span>
+                <span class="method-start">8393 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">userdetale</span>
+                <span class="method-start">9005 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">closeall</span>
-                <span class="method-start">1453 ms</span>
+                <span class="method-start">9418 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

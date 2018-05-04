@@ -1,32 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+<testng-results skipped="1" failed="0" ignored="0" total="14" passed="13">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1461" started-at="2018-04-19T10:14:33Z" finished-at="2018-04-19T10:14:35Z">
+  <suite name="Default suite" duration-ms="9428" started-at="2018-05-03T14:54:51Z" finished-at="2018-05-03T14:55:00Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1461" started-at="2018-04-19T10:14:33Z" finished-at="2018-04-19T10:14:35Z">
+    <test name="Default test" duration-ms="9428" started-at="2018-05-03T14:54:51Z" finished-at="2018-05-03T14:55:00Z">
       <class name="squad.api.Smoke">
-        <test-method status="PASS" signature="setup()[pri:0, instance:squad.api.Smoke@5ae63ade]" name="setup" is-config="true" duration-ms="8" started-at="2018-04-19T10:14:33Z" finished-at="2018-04-19T10:14:33Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:squad.api.Smoke@578486a3]" name="setup" is-config="true" duration-ms="6" started-at="2018-05-03T14:54:51Z" finished-at="2018-05-03T14:54:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="Login()[pri:0, instance:squad.api.Smoke@5ae63ade]" name="Login" duration-ms="1425" started-at="2018-04-19T10:14:33Z" finished-at="2018-04-19T10:14:35Z">
+        <test-method status="PASS" signature="GetAllOnUsr()[pri:0, instance:squad.api.Smoke@578486a3]" name="GetAllOnUsr" duration-ms="982" started-at="2018-05-03T14:54:51Z" finished-at="2018-05-03T14:54:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetAllOnUsr -->
+        <test-method status="PASS" signature="Login()[pri:0, instance:squad.api.Smoke@578486a3]" name="Login" duration-ms="1035" started-at="2018-05-03T14:54:52Z" finished-at="2018-05-03T14:54:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method status="FAIL" signature="post()[pri:0, instance:squad.api.Smoke@5ae63ade]" name="post" duration-ms="2" started-at="2018-04-19T10:14:35Z" finished-at="2018-04-19T10:14:35Z">
-          <exception class="java.lang.Error">
+        <test-method status="PASS" signature="dislike()[pri:0, instance:squad.api.Smoke@578486a3]" name="dislike" duration-ms="691" started-at="2018-05-03T14:54:53Z" finished-at="2018-05-03T14:54:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dislike -->
+        <test-method status="PASS" signature="getFeed()[pri:0, instance:squad.api.Smoke@578486a3]" name="getFeed" duration-ms="554" started-at="2018-05-03T14:54:54Z" finished-at="2018-05-03T14:54:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getFeed -->
+        <test-method status="PASS" signature="getFullFeed()[pri:0, instance:squad.api.Smoke@578486a3]" name="getFullFeed" duration-ms="836" started-at="2018-05-03T14:54:54Z" finished-at="2018-05-03T14:54:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getFullFeed -->
+        <test-method status="PASS" signature="getusergroups()[pri:0, instance:squad.api.Smoke@578486a3]" name="getusergroups" duration-ms="992" started-at="2018-05-03T14:54:55Z" finished-at="2018-05-03T14:54:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getusergroups -->
+        <test-method status="PASS" signature="like()[pri:0, instance:squad.api.Smoke@578486a3]" name="like" duration-ms="505" started-at="2018-05-03T14:54:56Z" finished-at="2018-05-03T14:54:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- like -->
+        <test-method status="PASS" signature="post()[pri:0, instance:squad.api.Smoke@578486a3]" name="post" duration-ms="583" started-at="2018-05-03T14:54:57Z" finished-at="2018-05-03T14:54:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- post -->
+        <test-method status="PASS" signature="search()[pri:0, instance:squad.api.Smoke@578486a3]" name="search" duration-ms="610" started-at="2018-05-03T14:54:57Z" finished-at="2018-05-03T14:54:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method status="PASS" signature="searchusers()[pri:0, instance:squad.api.Smoke@578486a3]" name="searchusers" duration-ms="595" started-at="2018-05-03T14:54:58Z" finished-at="2018-05-03T14:54:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchusers -->
+        <test-method status="PASS" signature="subscibe()[pri:0, instance:squad.api.Smoke@578486a3]" name="subscibe" duration-ms="483" started-at="2018-05-03T14:54:58Z" finished-at="2018-05-03T14:54:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subscibe -->
+        <test-method status="SKIP" signature="subscibe2me()[pri:0, instance:squad.api.Smoke@578486a3]" name="subscibe2me" duration-ms="469" started-at="2018-05-03T14:54:59Z" finished-at="2018-05-03T14:54:59Z">
+          <exception class="org.testng.SkipException">
             <message>
-              <![CDATA[Unresolved compilation problem: 
-client cannot be resolved
-]]>
+              <![CDATA[Удалось подписаться на самого себя. Код ответа:  200]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Error: Unresolved compilation problem: 
-client cannot be resolved
-
-at squad.api.Smoke.post(Smoke.java:100)
+              <![CDATA[org.testng.SkipException: Удалось подписаться на самого себя. Код ответа:  200
+at squad.api.Smoke.subscibe2me(Smoke.java:578)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -54,11 +90,19 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.Error -->
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- post -->
-        <test-method status="PASS" signature="closeall()[pri:0, instance:squad.api.Smoke@5ae63ade]" name="closeall" is-config="true" duration-ms="0" started-at="2018-04-19T10:14:35Z" finished-at="2018-04-19T10:14:35Z">
+        </test-method> <!-- subscibe2me -->
+        <test-method status="PASS" signature="subscibe2usrs()[pri:0, instance:squad.api.Smoke@578486a3]" name="subscibe2usrs" duration-ms="611" started-at="2018-05-03T14:54:59Z" finished-at="2018-05-03T14:55:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subscibe2usrs -->
+        <test-method status="PASS" signature="userdetale()[pri:0, instance:squad.api.Smoke@578486a3]" name="userdetale" duration-ms="410" started-at="2018-05-03T14:55:00Z" finished-at="2018-05-03T14:55:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userdetale -->
+        <test-method status="PASS" signature="closeall()[pri:0, instance:squad.api.Smoke@578486a3]" name="closeall" is-config="true" duration-ms="1" started-at="2018-05-03T14:55:00Z" finished-at="2018-05-03T14:55:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeall -->
